@@ -1,0 +1,16 @@
+.forward {
+  background: url(../../assets/icons/forward.png);
+}
+
+.backward {
+  background: url(../../assets/icons/backward.png);
+}
+
+.squareButton {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #f5f5f5;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: url('../../assets/cursors/cursor-pointer.png'), auto;
+}

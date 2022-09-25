@@ -1,4 +1,92 @@
 .case {
   min-width: 100vw;
   height: 100vh;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  &_title {
+    z-index: 3;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 60px;
+    color: #f5f5f5;
+  }
+  &_notebook {
+    position: absolute;
+    top: 137px;
+    right: 80px;
+    width: 1017px;
+    height: 576px;
+    max-height: 576px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    &_top {
+      z-index: 1;
+      position: absolute;
+      top: 0px;
+      padding: 13px 15px 36px;
+      width: 774px;
+      min-height: 548px;
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.4) 70.66%,
+          rgba(51, 51, 51, 0.643) 90.82%,
+          rgba(0, 0, 0, 0.94) 102.78%
+        ),
+        linear-gradient(115.51deg, #333333 0%, #596368 53.13%, #333333 100%);
+      border: 1.54049px solid #333333;
+      border-radius: 18.4858px;
+      &-img {
+        height: 496px;
+      }
+    }
+    &_bottom {
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      height: 37px;
+
+      border: 1px solid #000000;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 0px 0px 10% 10%/60%;
+
+      background: linear-gradient(
+          180deg,
+          rgba(102, 102, 102, 0.3) 0%,
+          rgba(102, 102, 102, 0.3) 50%,
+          rgba(0, 0, 0, 0.15) 54.17%,
+          rgba(0, 0, 0, 0.3) 100%
+        ),
+        linear-gradient(270deg, #212121 0%, #555555 50%, #212121 100%);
+      &-hole {
+        width: 153.45px;
+        height: 17.25px;
+
+        background: linear-gradient(
+            90deg,
+            #333333 0%,
+            rgba(51, 51, 51, 0.42) 13.02%,
+            rgba(51, 51, 51, 0.118947) 93.23%,
+            rgba(51, 51, 51, 0.83) 100%
+          ),
+          linear-gradient(
+            180deg,
+            #999999 0%,
+            #777777 15.1%,
+            #444444 60.94%,
+            #333333 82.29%,
+            #222222 100%
+          ),
+          #c4c4c4;
+        border-radius: 0px 0px 77.0243px 77.0243px;
+      }
+    }
+  }
 }
