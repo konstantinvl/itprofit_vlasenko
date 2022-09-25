@@ -4,21 +4,18 @@
     "es2021": true,
     "node": true
   },
-  "extends": [
-    "airbnb-typescript/base",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:import/recommended"
-  ],
+  "extends": ["plugin:@typescript-eslint/recommended", "plugin:import/recommended"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json"
   },
   "plugins": ["@typescript-eslint"],
   "rules": {
+    "import/no-unresolved": "off",
     "consistent-return": "off",
     "no-plusplus": "off",
     "no-console": "warn",
-    "max-len": ["error", { "code": 100 }],
+    "max-len": ["warn", { "code": 200 }],
     "import/extensions": "off",
     "import/prefer-default-export": "off",
     "no-param-reassign": [

@@ -6,8 +6,8 @@ import './wrapper.scss';
 
 export default class CaseWrapper extends BaseComponent {
   cases: CasePage[];
-  translate: number = 0;
-  currentCase: number = 1;
+  translate = 0;
+  currentCase = 1;
   constructor() {
     super('div', ['wrapper']);
     this.cases = CASE_PAGES_DATA.map(
@@ -67,7 +67,6 @@ export default class CaseWrapper extends BaseComponent {
   }
 
   scrollForward() {
-    console.log('f');
     const width = (this.element.childNodes[0] as HTMLElement).offsetWidth;
     if (this.currentCase < this.cases.length) {
       this.translate = -width * this.currentCase;

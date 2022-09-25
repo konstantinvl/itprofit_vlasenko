@@ -25,9 +25,7 @@ export default class CaseBall extends BaseComponent {
 
   newCoordinates(x: number, y: number) {
     const tg = (y - this.top + this.size / 2) / (x - this.left + this.size / 2);
-    console.log(tg);
     const deg = Math.atan(tg);
-    console.log(deg);
     const sin = Math.sin(deg);
     const newY = sin * this.size;
     const newX = newY / tg;

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "build": "eslint src --fix && webpack",
+    "build": "webpack",
     "dev": "webpack serve --env development",
     "lint": "eslint src",
     "fix": "eslint ./src --fix"
@@ -36,8 +36,10 @@
     "webpack-dev-server": "^4.3.1"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
     "clean-webpack-plugin": "^4.0.0",
     "eslint": "^8.24.0",
+    "eslint-plugin-import": "^2.26.0",
     "path": "^0.12.7"
   }
 }
